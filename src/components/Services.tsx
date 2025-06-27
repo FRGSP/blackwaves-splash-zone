@@ -1,13 +1,16 @@
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Code, Smartphone, Globe, Database, Cloud, Shield } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Code, Smartphone, Globe, Database, Cloud, Shield, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const services = [
   {
     icon: Code,
     title: "Custom Software Development",
     description: "Tailored applications built with cutting-edge technologies to solve your unique business challenges.",
-    color: "from-blue-500 to-cyan-500"
+    color: "from-blue-500 to-cyan-500",
+    link: "/custom-software"
   },
   {
     icon: Globe,
@@ -66,7 +69,27 @@ const Services = () => {
                   <service.icon className="h-6 w-6 text-white" />
                 </div>
                 <h3 className="text-xl font-semibold text-white mb-3">{service.title}</h3>
-                <p className="text-slate-300 leading-relaxed">{service.description}</p>
+                <p className="text-slate-300 leading-relaxed mb-4">{service.description}</p>
+                
+                {service.link ? (
+                  <Link to={service.link}>
+                    <Button 
+                      size="sm" 
+                      className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white"
+                    >
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </Link>
+                ) : (
+                  <Button 
+                    size="sm" 
+                    variant="outline"
+                    className="border-slate-600 text-slate-300 hover:bg-slate-700"
+                  >
+                    Coming Soon
+                  </Button>
+                )}
               </CardContent>
             </Card>
           ))}
