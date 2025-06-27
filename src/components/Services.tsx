@@ -7,13 +7,13 @@ const services = [
     icon: Code,
     title: "Custom Software Development",
     description: "Tailored applications built with cutting-edge technologies to solve your unique business challenges.",
-    color: "from-emerald-500 to-teal-500"
+    color: "from-blue-500 to-cyan-500"
   },
   {
     icon: Globe,
     title: "Web Applications",
     description: "Modern, responsive web applications that deliver exceptional user experiences across all devices.",
-    color: "from-teal-500 to-cyan-500"
+    color: "from-purple-500 to-pink-500"
   },
   {
     icon: Smartphone,
@@ -25,19 +25,19 @@ const services = [
     icon: Cloud,
     title: "Cloud Solutions",
     description: "Scalable cloud infrastructure and deployment strategies for maximum performance and reliability.",
-    color: "from-cyan-500 to-blue-500"
+    color: "from-orange-500 to-red-500"
   },
   {
     icon: Database,
     title: "Database Design",
     description: "Optimized database architectures that ensure data integrity and lightning-fast performance.",
-    color: "from-emerald-500 to-green-500"
+    color: "from-indigo-500 to-purple-500"
   },
   {
     icon: Shield,
     title: "Security & Maintenance",
     description: "Comprehensive security audits and ongoing maintenance to keep your applications secure and updated.",
-    color: "from-teal-500 to-emerald-500"
+    color: "from-teal-500 to-cyan-500"
   }
 ];
 
@@ -47,7 +47,7 @@ const Services = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Our <span className="bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-transparent">Services</span>
+            Our <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">Services</span>
           </h2>
           <p className="text-xl text-slate-300 max-w-3xl mx-auto">
             From concept to deployment, we provide end-to-end development services 
