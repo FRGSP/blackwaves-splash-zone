@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Code, Zap } from "lucide-react";
+import { ArrowRight, Code, Zap, Users } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -33,7 +34,7 @@ const Hero = () => {
           turning your vision into powerful, scalable solutions.
         </p>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-xl"
@@ -51,8 +52,22 @@ const Hero = () => {
             View Our Work
           </Button>
         </div>
+
+        {/* Careers CTA */}
+        <div className="mb-16">
+          <Link to="/careers">
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-emerald-600 text-emerald-400 hover:bg-emerald-600 hover:text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105"
+            >
+              <Users className="mr-2 h-5 w-5" />
+              Join Our Team
+            </Button>
+          </Link>
+        </div>
         
-        <div className="mt-16 flex justify-center items-center space-x-8 text-slate-400">
+        <div className="flex justify-center items-center space-x-8 text-slate-400">
           <div className="text-center">
             <div className="text-2xl font-bold text-white">50+</div>
             <div className="text-sm">Projects Delivered</div>
